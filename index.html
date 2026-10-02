@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Strategic Parking Consultancy provides independent strategic advice and practical support for parking services, places and people.">
+<title>Strategic Parking Consultancy</title>
+<style>
+:root {
+  --indigo:#292b63; --teal:#168b8b; --orange:#e99a32;
+  --ink:#25263a; --muted:#656a7c; --paper:#f7f8fa; --white:#fff;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; font-family:"Cabin","Aptos","Segoe UI",Arial,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; }
+a { color:inherit; }
+.wrap { width:min(1120px,calc(100% - 44px)); margin:auto; }
+header { background:rgba(255,255,255,.96); border-bottom:1px solid #e8e9ee; position:sticky; top:0; z-index:5; backdrop-filter:blur(12px); }
+.nav { min-height:88px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.logo { display:block; width:min(360px,48vw); height:auto; }
+nav { display:flex; align-items:center; gap:28px; font-size:.92rem; font-weight:600; color:var(--indigo); }
+nav a { text-decoration:none; }
+nav a:hover { color:var(--teal); }
+nav .contact { background:var(--indigo); color:white; padding:10px 17px; border-radius:3px; }
+nav .contact:hover { background:var(--teal); color:white; }
+.hero { position:relative; overflow:hidden; background:var(--white); padding:100px 0 96px; }
+.hero:after { content:""; position:absolute; width:440px; height:440px; border:1px solid rgba(22,139,139,.13); border-radius:50%; right:-130px; top:-170px; box-shadow:0 0 0 35px rgba(22,139,139,.025),0 0 0 75px rgba(22,139,139,.02); }
+.hero-inner { position:relative; z-index:1; max-width:820px; }
+.eyebrow { color:var(--teal); text-transform:uppercase; letter-spacing:.19em; font-size:.76rem; font-weight:800; margin:0 0 18px; }
+h1 { color:var(--indigo); font-size:clamp(2.8rem,7vw,5.4rem); letter-spacing:-.055em; line-height:1.02; margin:0; max-width:850px; }
+.lead { color:var(--muted); font-size:clamp(1.1rem,2vw,1.32rem); max-width:650px; margin:25px 0 30px; }
+.button { display:inline-block; background:var(--orange); color:#22243b; text-decoration:none; font-weight:800; padding:13px 21px; border-radius:3px; transition:transform .2s,filter .2s; }
+.button:hover { transform:translateY(-2px); filter:brightness(.97); }
+.section { padding:82px 0; }
+.section-head { max-width:700px; margin-bottom:35px; }
+h2 { color:var(--indigo); font-size:clamp(2rem,4vw,3rem); letter-spacing:-.04em; line-height:1.1; margin:0 0 14px; }
+.section-head p { color:var(--muted); margin:0; font-size:1.05rem; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.card { background:var(--white); padding:29px 27px 31px; border:1px solid #e8e9ee; border-top:4px solid var(--teal); box-shadow:0 12px 34px rgba(41,43,99,.045); }
+.card:nth-child(2) { border-top-color:var(--orange); }
+.card:nth-child(3) { border-top-color:var(--indigo); }
+.card .number { font-size:.78rem; font-weight:800; letter-spacing:.14em; color:var(--teal); }
+.card h3 { color:var(--indigo); font-size:1.25rem; margin:12px 0 8px; }
+.card p { color:var(--muted); margin:0; }
+.band { background:var(--indigo); color:white; padding:65px 0; }
+.band-inner { display:flex; justify-content:space-between; align-items:center; gap:35px; }
+.band h2 { color:white; max-width:650px; margin:0; }
+.band p { color:#e2e3ef; max-width:520px; margin:12px 0 0; }
+.band .button { flex:0 0 auto; }
+footer { background:#fff; padding:25px 0; border-top:1px solid #e8e9ee; color:#777b8b; font-size:.88rem; }
+.footer-inner { display:flex; justify-content:space-between; gap:20px; align-items:center; }
+.footer-brand { color:var(--indigo); font-weight:800; }
+@media(max-width:760px) {
+ .nav { min-height:76px; } .logo { width:min(300px,58vw); }
+ nav { gap:14px; font-size:.85rem; } nav a:not(.contact) { display:none; }
+ .hero { padding:76px 0 72px; } .section { padding:62px 0; }
+ .cards { grid-template-columns:1fr; } .band-inner { align-items:flex-start; flex-direction:column; }
+ .footer-inner { align-items:flex-start; flex-direction:column; }
+}
+@media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto} .button{transition:none} }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="#home" aria-label="Strategic Parking Consultancy home"><img class="logo" src="/assets/logo.png" alt="Strategic Parking Consultancy logo"></a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a class="contact" href="mailto:hello@strategicparkingconsultancy.co.uk">Get in touch</a>
+    </nav>
+  </div>
+</header>
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Parking · Places · Strategy</p>
+      <h1>Making parking work for places and people.</h1>
+      <p class="lead">Independent strategic insight and practical support for organisations looking to make their parking services more effective, resilient and customer-focused.</p>
+      <a class="button" href="#services">Explore our services <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2>Clarity for complex parking challenges.</h2>
+        <p>From long-term strategy to day-to-day service improvement, we help turn experience and evidence into practical action.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="number">01 / STRATEGY</span><h3>Strategy &amp; planning</h3><p>Clear direction for parking networks, policy, investment and long-term place objectives.</p></article>
+        <article class="card"><span class="number">02 / DELIVERY</span><h3>Service improvement</h3><p>Practical approaches to operations, customer experience, performance and digital delivery.</p></article>
+        <article class="card"><span class="number">03 / LEADERSHIP</span><h3>Leadership &amp; insight</h3><p>Experienced advice, independent challenge and support for teams navigating change.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="band" id="approach">
+    <div class="wrap band-inner">
+      <div><p class="eyebrow" style="color:#8ed0cd">Our approach</p><h2>Practical thinking. Strategic perspective.</h2><p>Parking is more than a place to leave a vehicle. It connects transport, town centres, customer experience and the wider ambitions of a place.</p></div>
+      <a class="button" href="mailto:hello@strategicparkingconsultancy.co.uk">Start a conversation <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><span class="footer-brand">Strategic Parking Consultancy</span><span>Independent advice for better parking and better places.</span></div></footer>
+</body>
+</html>
