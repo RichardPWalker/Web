@@ -24,4 +24,4 @@ Open `index.html` in a browser. No build tools or dependencies are required.
 
 ## Before publishing
 
-The contact button currently uses a placeholder email address (`hello@strategicparkingconsultancy.co.uk`). Replace it in `index.html` with the correct business email address before launch.
+The contact button currently uses a placeholder email address (`hello@strategicparking.co.uk`). Replace it in `index.html` with the correct business email address before launch.
